@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    <style>
+    
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 640px ;
+}
+.bb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+nav{
+                background-color: whitesmoke;
+                overflow: hidden;
+                padding: 20px;
+                box-sizing: border-box;
+                height: 60px;
+                padding-top: 0px;
+                display: block;
+            }
+            nav h2{
+                color: rgb(1,1,243);
+                float: left;
+                font-weight: bolder;
+                margin-top: 18px;
+            }
+            nav a{
+                color: rgba(0, 0, 0, 0.733);
+                font-weight: bolder;
+                margin-left: 10px;
+                float: right;
+                text-decoration: none;
+                padding: 15px 10px;
+                margin-top: 10px;
+                margin-right: 5px;
+                font-size: 19px;
+
+            }
+            .llo{
+                border-left: 2px solid black;
+                padding-left: 20px;
+            }
+            .link {
+                float: right;
+                text-align: right;
+
+            }
+            .llo2:hover{
+                color: blue;
+                transition: color 1.0s;
+                border-radius: 5px;
+                box-sizing: border-box;
+               padding-bottom: 8px;
+              
+               
+            }
+            .ho:hover{
+                background-color: blue;
+                color: white;
+                transition: background-color 1.0s;
+                border-radius: 5px;
+                box-sizing: border-box;
+               padding-bottom: 4px;
+            }
+            .jo:hover{
+                background-color: blue;
+                color: white;
+                transition: background-color 1.0s;
+                border-radius: 5px;
+                box-sizing: border-box;
+               padding-bottom: 4px;
+            }
+            .ro:hover{
+                background-color: blue;
+                color: white;
+                transition: background-color 1.0s;
+                border-radius: 5px;
+                box-sizing: border-box;
+               padding-bottom:4px;
+            }
+            .yo:hover{
+                background-color: blue;
+                color: white;
+                transition: background-color 1.0s;
+                border-radius: 5px;
+                box-sizing: border-box;
+               padding-bottom: 4px;
+              
+            }
+
+.container1 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.1);
+    position: relative;
+    width: 800px;
+    max-width: 100%;
+    min-height: 490px;
+    display: flex;
+    overflow: hidden;
+}
+
+.form-container {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+form h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+
+
+form span {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+input {
+    background-color: #eeeeeede;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 14px;
+}
+input:hover{
+    background-color: rgba(245, 245, 245, 0.918);
+}
+
+.fp {
+    color: #666;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 20px;
+    border: 1px solid transparent;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    
+}
+
+.btn-si {
+    background-color:  blue;
+    color: #ffffff;
+}
+
+
+.btn-su {
+    background-color: transparent;
+    border-color: #ffffff;
+    color: #ffffff;
+    margin-top: 20px;
+}
+.btn-su a{
+    text-decoration: none;
+    color: white;
+    transition: 0.1ms ease;
+}
+.container2 {
+    width: 50%;
+    background: blue;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.note h1 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.note p {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+ footer{
+                background: whitesmoke;
+                text-align: center;
+            }
+            .ff{
+                text-align: left;
+                margin-left: 30px;
+            }
+            .ff h5{
+                font-size: 20px;
+                margin-bottom: 0px;
+                margin-left:0px ;
+            }
+           .ff a {
+                border: 1px solid blue;
+                background-color: blue;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 5px;
+                height: 30px;
+                width: 30px;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                
+            }
+            .tg{
+                display: flex;
+                align-items: center;
+                margin: 0px;
+                gap: 4px;  
+                
+            }
+            .tg a{
+                margin-top: 10px;
+            }
+            .tg p{
+                margin-bottom: 0px;
+            }
+            .llo{
+                color: blue;
+            }
+
+
+
+    </style>
+    
+</head>
+
+        <body>
+            <nav>
+            <h2>Hexapace</h2>        
+            <div class="link"> 
+             <a href="SU.html" id="llo" class="llo"><div class="llo2">Log In</div></a>                     
+            <a href="Quiz.html" class="ho">Quiz</a>
+            <a href="type.html" class="jo">Groups</a>
+            <a href="Books.html" class="yo">Books</a>
+            <a href="hexapace.html" class="ro">Home</a>
+            </div>
+        </nav>
+        <div class="bb">
+    <div class="container1">
+    
+        <div class="form-container sign-in-container">
+            <form>
+                <h1>Sign in</h1>
+                
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#" class="fp">Forgot your password?</a>
+                <button type="submit" class=" btn btn-si">SIGN IN</button>
+            </form>
+        </div>
+
+        <div class="container2">
+            <div class="note">
+                <h1>Hello, Friend!</h1>
+                <p>Invest in your mind. Explore tailored <br> mental health solutions.</p>
+                <button class="btn btn-su"><a href="SU.html">SIGN UP</a></button>
+            </div>
+        </div>
+    </div>
+    </div>
+      
+        <footer>
+            <div class="ff">
+            <h5>Contact Info</h5>
+            <div class="tg">
+            <a>E</a>
+            <p>Email: Hexapace@gmail.com</p>
+            </div>
+            <div class="tg">
+            <a>P</a>
+            <p>Phone: 251989770543</p>
+            </div>
+            <div class="tg">
+            <a href="linkedin.com">in</a>
+            <p>LinkedIn:Hexapace</p>
+            </div>
+            <div class="tg">
+            <a href="facebook.com" id="fb">f</a>
+            <p>Facebook:Hexapace</p>
+            </div>
+            </div>
+            <div>
+                <p>&copy:2026 HEXAPACE. All rights reserved.</p>
+            
+            </div>
+        </footer>
+</body>
+</html>

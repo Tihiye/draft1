@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz</title>
+        <style>
+          body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+}
+.qq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+             nav{
+                background-color: whitesmoke;
+                overflow: hidden;
+                padding: 10px;
+                box-sizing: border-box;
+                height: 60px;
+                padding-top: 0px;
+            }
+            nav h2{
+                color: rgb(1,1,243);
+                float: left;
+                font-weight: bolder;
+                margin-top: 18px;
+            }
+            nav a{
+                color: rgba(0, 0, 0, 0.733);
+                font-weight: bolder;
+                margin-left: 10px;
+                float: right;
+                text-decoration: none;
+                padding: 15px 10px;
+                margin-top: 10px;
+                margin-right: 5px;
+                font-size: 19px;
+
+            }
+            .llo{
+                border-left: 2px solid black;
+                padding-left: 20px;
+                
+            }
+             .llo2:hover{
+                color: blue;
+                transition: color 1.0s;
+                border-radius: 5px;
+                box-sizing: border-box;
+               padding-bottom: 8px;
+               font-weight: bolder;
+               
+            }
+            .ho:hover{
+                background-color: blue;
+                color: white;
+                transition: background-color 1.0s;
+                border-radius: 5px;
+                box-sizing: border-box;
+               padding-bottom: 8px;
+            }
+            .jo:hover{
+                background-color: blue;
+                color: white;
+                transition: background-color 1.0s;
+                border-radius: 5px;
+                box-sizing: border-box;
+               padding-bottom: 8px;
+            }
+            .ro:hover{
+                background-color: blue;
+                color: white;
+                transition: background-color 1.0s;
+                border-radius: 5px;
+                box-sizing: border-box;
+               padding-bottom: 8px;
+            }
+            .ho{
+                color: blue;
+            }
+            
+          
+.quiz-card {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    border-left:4px solid blue ;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 400px;
+}
+h1 {
+     font-size: 20px;
+      text-align: center;
+       color: #333;
+     }
+#question { 
+    font-size: 16px; 
+    margin: 20px 0; 
+    color: #444; 
+    font-weight: bold;
+ }
+.opt-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    text-align: left;
+}
+.opt-btn:hover {
+     background: #eef2f7;
+     border: 2px solid blue;
+     }
+#next-btn {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+#next-btn:hover {
+     background: #0056b3;
+     }
+#result-box {
+     text-align: center; 
+     font-size: 16px;
+      color: #333;
+       line-height: 1.5;
+     } 
+     footer{
+                background: white;
+                text-align: center;
+            }
+            .ff{
+                text-align: left;
+                margin-left: 30px;
+            }
+            .ff h5{
+                font-size: 20px;
+                margin-bottom: 0px;
+                margin-left:0px ;
+            }
+           .ff a {
+                border: 1px solid blue;
+                background-color: blue;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 5px;
+                height: 30px;
+                width: 30px;
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+                
+            }
+            .tg{
+                display: flex;
+                align-items: center;
+                margin: 0px;
+                gap: 4px;  
+                
+            }
+            .tg a{
+                margin-top: 10px;
+            }
+            .tg p{
+                margin-bottom: 0px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+         <nav>
+            <h2>Hexapace</h2>  
+            <a href="SU.html" id="llo" class="llo"><div class="llo2">Log In</div></a>                     
+            <a href="Quiz.html" class="ho">Quiz</a>
+            <a href="type.html" class="jo">Groups</a>
+            <a href="Books.html" class="yo">Books</a>
+            <a href="hexapace.html" class="ro">Home</a>
+        </nav> 
+  <div class="qq">
+    <div class="quiz-card">
+        <h1>Mental Wellness Check</h1>
+        <div id="quiz-box">
+            <div id="question">Loading question...</div>
+            <div id="options-list"></div>
+        </div>
+        <button id="next-btn" style="display: none;">Next Question</button>
+        <div id="result-box" style="display: none;"></div>
+    </div>
+    </div>
+
+         <footer>
+            <div class="ff">
+            <h5>Contact Info</h5>
+            <div class="tg">
+            <a>E</a>
+            <p>Email: Hexapace@gmail.com</p>
+            </div>
+            <div class="tg">
+            <a>P</a>
+            <p>Phone: 251989770543</p>
+            </div>
+            <div class="tg">
+            <a href="linkedin.com">in</a>
+            <p>LinkedIn:Hexapace</p>
+            </div>
+            <div class="tg">
+            <a href="facebook.com" id="fb">f</a>
+            <p>Facebook:Hexapace</p>
+            </div>
+            </div>
+            <div>
+                <p>&copy:2026 HEXAPACE. All rights reserved.</p>
+            
+            </div>
+        </footer>
+        <script>
+            const questions = [
+    { q: "How often have you felt overwhelmed in the past 2 weeks?", opts: ["Rarely", "Sometimes", "Often", "Always"], scores: [1, 2, 3, 4] },
+    { q: "How would you rate your sleep quality lately?", opts: ["Good", "Average", "Poor", "Very Poor"], scores: [1, 2, 3, 4] },
+    { q: "Do you feel you have people to talk to when things get hard?", opts: ["Always", "Mostly", "Rarely", "Never"], scores: [1, 2, 3, 4] },
+    { q: "How often do you take time to do things for yourself?", opts: ["Daily", "Weekly", "Rarely", "Never"], scores: [1, 2, 3, 4] },
+    { q: "Have you noticed major changes in your energy levels?", opts: ["No changes", "Slight drop", "Low energy", "Exhausted"], scores: [1, 2, 3, 4] },
+    { q: "How easily can you focus on daily tasks?", opts: ["Very easily", "Moderate", "Difficult", "Cannot focus"], scores: [1, 2, 3, 4] },
+    { q: "How often do you feel anxious or restless?", opts: ["Rarely", "Sometimes", "Often", "Constantly"], scores: [1, 2, 3, 4] },
+    { q: "How is your appetite lately?", opts: ["Normal", "A bit off", "Very low", "Eating too much/little"], scores: [1, 2, 3, 4] },
+    { q: "How often do you engage in physical movement or walks?", opts: ["Regularly", "Sometimes", "Rarely", "Never"], scores: [1, 2, 3, 4] },
+    { q: "How do you feel about your overall mood this week?", opts: ["Positive", "Neutral", "Low", "Very Sad"], scores: [1, 2, 3, 4] }
+];
+
+let currentIdx = 0;
+let totalScore = 0;
+
+const qEl = document.getElementById("question");
+const optsEl = document.getElementById("options-list");
+const nextBtn = document.getElementById("next-btn");
+const quizBox = document.getElementById("quiz-box");
+const resultBox = document.getElementById("result-box");
+
+function loadQuestion() {
+    resetState();
+    let current = questions[currentIdx];
+    qEl.innerText = `Q${currentIdx + 1}: ${current.q}`;
+    
+    current.opts.forEach((opt, i) => {
+        const btn = document.createElement("button");
+        btn.innerText = opt;
+        btn.classList.add("opt-btn");
+        btn.addEventListener("click", () => selectAnswer(current.scores[i]));
+        optsEl.appendChild(btn);
+    });
+}
+
+function resetState() {
+    nextBtn.style.display = "none";
+    optsEl.innerHTML = "";
+}
+
+function selectAnswer(scoreValue) {
+    totalScore += scoreValue;
+    Array.from(optsEl.children).forEach(b => b.disabled = true);
+    if (currentIdx < questions.length - 1) {
+        nextBtn.style.display = "block";
+    } else {
+        showResult();
+    }
+}
+
+nextBtn.addEventListener("click", () => {
+    currentIdx++;
+    loadQuestion();
+});
+
+function showResult() {
+    quizBox.style.display = "none";
+    nextBtn.style.display = "none";
+    resultBox.style.display = "block";
+    
+    let feedback = "";
+    if (totalScore <= 15) feedback = "Your score suggests low stress. Keep up your healthy routines!";
+    else if (totalScore <= 25) feedback = "You have moderate stress. Consider taking small breaks and resting more.";
+    else feedback = "You show high stress levels. Please consider reaching out to a support professional.";
+
+    resultBox.innerHTML = `<h2>Quiz Completed</h2><p>Your total score: <strong>${totalScore}</strong></p><p>${feedback}</p>`;
+}
+
+loadQuestion();
+
+        </script>
+        
+    </body>
+</html>
